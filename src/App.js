@@ -50,7 +50,7 @@ function App() {
 
   return (
     <div className = {(
-      typeof weather.name !== 'undefined') ? (weather.main.temp > 16 ? 'App' : 'App warm') : 'App'}>
+      typeof weather.name !== 'undefined') ? (weather.main.temp > 16 ? 'App warm' : 'App') : 'App'}>
       <div className="main">
         <div className="search-box">
           <input type="text" className="search-bar" placeholder="Search" 
@@ -66,7 +66,7 @@ function App() {
             <div className = "location">{weather.name}, {weather.sys.country} </div>
             <div className="date">{dateHandler(new Date())}</div>
             <div className="temp-box">
-              <div className="temp"> {Math.round(weather.main.temp)} </div>
+              <div className="temp"> {Math.round(weather.main.temp)}<i className= 'degrees' >{'\u00b0'}</i> </div>
               <div className="weather"> {weather.weather[0].main} </div>
             </div>  
           </div> : ('')}

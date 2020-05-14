@@ -67,7 +67,7 @@ body{
   font-size: 70px;
   font-weight: 600;
   padding: 20px;
-  margin: 15px 80px;
+  margin: 15px 150px;
   background: rgba(255, 255, 255, .5);
   box-shadow: 5px 5px rgba(255, 255, 255, .2);
   border-radius: 10px;
@@ -77,4 +77,10 @@ body{
 .temp-box .weather{
   font-size: 25px;
   font-weight: 500;
+}
+
+@media screen and (max-width: 650px) {
+  .temp-box .temp{
+    margin: 15px 60px;
+  }
 }
